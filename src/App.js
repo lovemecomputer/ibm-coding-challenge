@@ -19,16 +19,25 @@ class App extends Component {
     this.getImages();
   }
 
+  componentDidUpdate() {
+    if( arguments[1].page != this.state.page ){
+      this.getImages();
+    }
+    
+  }
+
   getImages() {
     fetch(apiQuery + this.state.page)
       .then(response => response.json())
-      .then(data => this.setState({ hits: data.hits }));
+      .then(data => {
+        this.setState({ hits: data.hits });
+      });
   }
 
   goToNextPage() {
-    this.setState((prevState, props) => ({
-      page: prevState.page + 1
-    }));
+    this.setState((prevState) => {
+      return {page: prevState.page + 1};
+    });
   }
 
   render() {
