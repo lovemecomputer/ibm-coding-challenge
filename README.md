@@ -1,11 +1,11 @@
 
 ---
 
-coding challenge for Design@IBM
+👩🏻‍💻 coding challenge for Design@IBM
 
-small react app which displays images of kittens from the [Pixabay API](https://pixabay.com/api/docs/).
+🐱 small react app which displays images of kittens from the [Pixabay API](https://pixabay.com/api/docs/).
 
-created using [create-react-app](https://github.com/facebook/create-react-app).
+🛠 created using [create-react-app](https://github.com/facebook/create-react-app).
 
 
 ---
