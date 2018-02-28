@@ -8,11 +8,10 @@ html {
 
 body {
   background: #fff;
-  color: #414141;
-  color: #ec80bd;
-  font-family: 'Varela Round', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  /* 16px equivalent */
+  /* color: #414141; */
+  color: #6bd1e5;
+  font-family: Karla, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
   font-weight: 400; }
 
 a {
@@ -85,7 +84,12 @@ button, input[type="button"], input[type="submit"],
   color: #9c9b9b; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600; }
+  font-weight: 400; }
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+}
 
 hr {
   margin: 4rem 0;
@@ -106,6 +110,13 @@ main {
   margin: 2rem auto;
 }
 
+a.image-result {
+  border: 1rem solid transparent;
+}
+a.image-result:hover {
+  border-color: inherit;
+}
+
 .image-result {
   display: block;
   width: 100%;
@@ -116,4 +127,8 @@ main {
 .image-result img {
   display: block;
   width: 100%;
+}
+
+.pagination {
+  font-size: 3rem;
 }
