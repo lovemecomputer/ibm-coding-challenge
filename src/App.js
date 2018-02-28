@@ -89,7 +89,7 @@ class App extends Component {
               onClick={event=>{
                 this.goToNextPage();
               }}>
-              more kitties, pls >
+              more {this.state.species}, pls >
             </a>
           </div>
         </main>
