@@ -1,5 +1,5 @@
-/* Define variables =================== */
-/* Import partials =================== */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 html {
   font-size: 0.625rem;
   /* 10px equivalent thanks to default of 16px */ }
@@ -9,7 +9,8 @@ html {
 body {
   background: #fff;
   color: #414141;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ec80bd;
+  font-family: 'Varela Round', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   /* 16px equivalent */
   font-weight: 400; }
@@ -97,25 +98,22 @@ body {
   padding: 4rem; }
 
 main {
-  margin: 2rem 0; }
-
-.imageResult {
-  display: inline-block;
-  max-width: 50%;
-  width: 150px;
+  /* margin: 2rem 0; */
 }
 
-.thumbnailContainer{
-  /* rules for aligning images */
+.image-viewer {
+  max-width: 40rem;
+  margin: 2rem auto;
+}
+
+.image-result {
   display: block;
   width: 100%;
-  padding-bottom: 60%;
-  height: 0;
-  position: relative;
   overflow: hidden;
+  margin-bottom: 6rem;
 }
 
-.imageResult img {
+.image-result img {
   display: block;
   width: 100%;
 }

@@ -22,18 +22,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">view kitties</h1>
-        </header>
-        {this.state.hits.map( (imageHit, index) => {
-          console.log(imageHit);
-          return (
-            <Image 
-              imageUrl={imageHit.previewURL} 
-              key={imageHit.id}
-            />
-          );
-        })}
+        <main className="image-viewer">
+          <header className="App-header">
+            <h1 className="App-title">view kitties</h1>
+          </header>
+          {this.state.hits.map( (imageHit, index) => {
+            console.log(imageHit);
+            return (
+              <Image 
+                imageUrl={imageHit.webformatURL} 
+                caption={"kitten image"}
+                key={imageHit.id}
+              />
+            );
+          })}
+        </main>
       </div>
     );
   }
