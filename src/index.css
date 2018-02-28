@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 
 html {
   font-size: 0.625rem;
@@ -10,6 +10,7 @@ body {
   background: #fff;
   /* color: #414141; */
   color: #6bd1e5;
+  /* color: #2328ff; */
   font-family: Karla, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 400; }
@@ -43,7 +44,7 @@ button, input[type="button"], input[type="submit"],
   -moz-appearance: none;
   appearance: none;
   background: #fff;
-  border: .2rem solid;
+  border: .4rem solid;
   color: #000;
   cursor: pointer;
   display: inline-block;
@@ -84,7 +85,7 @@ button, input[type="button"], input[type="submit"],
   color: #9c9b9b; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 700; }
 
 h1 {
   font-size: 3em;
@@ -111,10 +112,11 @@ main {
 }
 
 a.image-result {
-  border: 1rem solid transparent;
+  border:none;
+  outline: 1rem solid transparent;
 }
 a.image-result:hover {
-  border-color: inherit;
+  outline: 1rem solid #000;
 }
 
 .image-result {
@@ -131,4 +133,9 @@ a.image-result:hover {
 
 .pagination {
   font-size: 3rem;
+}
+
+.species-switcher {
+  color: #2328ff;
+  border-bottom: .4rem solid;
 }
